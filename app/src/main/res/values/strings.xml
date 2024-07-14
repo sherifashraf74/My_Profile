@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProfileScreen</string>
+    <string name="my_name">Sherif Ashraf Ali</string>
+    <string name="my_email">sherifashrafali@gmail.com</string>
+    <string name="my_Age">23 Yrs</string>
+    <string name="my_job">Android Developer</string>
+    <string name="linkedIn">LinkedIn</string>
+    <string name="gitHub">GitHub</string>
+    <string name="facebook">Facebook</string>
+    <string name="pBtn">My Profile</string>
+</resources>

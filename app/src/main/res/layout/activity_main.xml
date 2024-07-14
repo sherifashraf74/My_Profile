@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/headerImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="508dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rectangle_7090" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="@id/headerImg"
+        app:layout_constraintStart_toStartOf="@id/headerImg"
+        app:layout_constraintTop_toTopOf="@id/headerImg"
+        app:srcCompat="@drawable/ellipse_28" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:contentDescription="back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/group_1000008050"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toStartOf="@id/profilePic"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@id/headerImg"
+        app:layout_constraintTop_toTopOf="@id/headerImg"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_name"
+        android:textStyle="bold"
+        android:textColor="@color/text_co"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerImg" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/emailCard"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:backgroundTint="@color/bg_co"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp">
+
+          <ImageView
+              android:id="@+id/emailIcon"
+              android:layout_width="50dp"
+              android:layout_height="42dp"
+              android:src="@drawable/email" />
+
+          <TextView
+              android:id="@+id/emailTxt"
+              android:layout_marginStart="16dp"
+              android:layout_marginTop="8dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="@string/my_email" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/ageCard"
+      android:layout_width="409dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      android:backgroundTint="@color/bg_co"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/emailCard" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        tools:ignore="UseCompoundDrawables">
+
+      <ImageView
+          android:id="@+id/ageIcon"
+          android:layout_width="50dp"
+          android:layout_height="42dp"
+          android:src="@drawable/age"
+           />
+
+      <TextView
+          android:id="@+id/ageTxt"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="8dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/my_Age"
+          tools:ignore="InefficientWeight" />
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="409dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="@color/bg_co"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ageCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/jobIcon"
+          android:layout_width="50dp"
+          android:layout_height="42dp"
+          android:src="@drawable/permanent_job" />
+
+      <TextView
+          android:id="@+id/jobTxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="8dp"
+          android:layout_weight="1"
+          android:text="@string/my_job" />
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+
+  <ImageButton
+      android:id="@+id/linkedInBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="96dp"
+      android:layout_marginTop="44dp"
+      android:background="@color/white"
+      android:contentDescription="Linkedin"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView"
+      app:srcCompat="@drawable/linkedin" />
+
+  <ImageButton
+      android:id="@+id/facebookBtn"
+      android:contentDescription="FaceBook"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="12dp"
+      android:layout_marginTop="44dp"
+      android:background="@color/white"
+      app:layout_constraintStart_toEndOf="@+id/linkedInBtn"
+      app:layout_constraintTop_toBottomOf="@+id/cardView"
+      app:srcCompat="@drawable/facebook" />
+  <ImageButton
+      android:id="@+id/githubBtn"
+      android:contentDescription="GitHup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="44dp"
+      android:background="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.104"
+      app:layout_constraintStart_toEndOf="@+id/facebookBtn"
+      app:layout_constraintTop_toBottomOf="@+id/cardView"
+      app:srcCompat="@drawable/git" />
+
+  <TextView
+      android:id="@+id/facebookTxt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/facebook"
+      android:textColor="@color/primary_co"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/facebookBtn"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/facebookBtn"
+      app:layout_constraintTop_toBottomOf="@+id/facebookBtn"
+      app:layout_constraintVertical_bias="0.013" />
+
+  <TextView
+      android:id="@+id/linkedInTxt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/linkedIn"
+      android:textColor="@color/primary_co"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/linkedInBtn"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="@+id/linkedInBtn"
+      app:layout_constraintTop_toBottomOf="@+id/linkedInBtn"
+      app:layout_constraintVertical_bias="0.019" />
+
+  <TextView
+      android:id="@+id/githubTxt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/gitHub"
+      android:textColor="@color/primary_co"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/githubBtn"
+      app:layout_constraintHorizontal_bias="0.909"
+      app:layout_constraintStart_toStartOf="@+id/githubBtn"
+      app:layout_constraintTop_toBottomOf="@+id/githubBtn"
+      app:layout_constraintVertical_bias="0.006" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
